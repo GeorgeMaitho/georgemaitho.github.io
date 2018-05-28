@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kejaniapp</title>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <style type="text/css">
+     #company-name{font-size: 3em;}
+     body{padding:10px ;}
+      .navbar{
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: purple;
+        font-size: 1.2em;
+        border: 0;
+      }
+      .navbar-brand{
+        float: left;
+        min-height: 55px;
+        padding-top: 0;
+      }
+      .navbar-inverse .navbar-nav .active .a, .navbar-inverse .navbar-nav .active .a:focus, .navbar-inverse .navbar-nav .active .a:hover {background: purple; color: white;}
+      .dropdown-menu{color: brown; background: purple;}
+      #col1{width: 300px;}
+      #col2{width: 750px;}
+      #col3{width: 250px; margin-left: 20px;}
+     
+     </style>
+</head>
+<body>
+<div class="text-centre">
+    <h3 id="company-name"><b>Kejaniapp.com</b></h3>
+    <p id="motto"><i>find a home wherever you want wherever you are</i></p>
+</div>
+<div class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="IMG/5.jpg" width="100px" height="55px"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                   <li><a href="#">find home</a></li>
+                   <li><a href="#">find commercial place</a></li>
+                   <li><a href="#">advertise</a></li></ul>
+                  </li>
+                  <li><a href="#">TESTIMONIALS</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+              </ul>
+      </div>  
+    </div>
+</div>
+<div class="column">
+    <div class="col-sm-4" id="col1">
+        <a href="#"><img src="IMG/12.jpg" width="150px" height="150px"></a>
+        <h5>Mzee Kenyatta</h5>
+   
+    <div class="form">
+     <form>
+        <p>Am looking for;</p>
+        <label for="htype">Home type</label>
+        <select>
+            <option>Single room</option>
+            <option>Double rooms</option>
+            <option>Bedsitter</option>
+            <option>One Bedroom</option>
+            <option>Two Bedrooms</option>
+            <option>Three Bedrooms</option>
+            <option>Four Bedrooms</option>
+        </select><br>
+        <label for="ctype">Commercial type</label>
+        <select>
+            <option>Shop</option>
+            <option>Store</option>
+            <option>Office</option>
+            <option>Showroom</option>
+            <option>Warehouse</option>
+            <option>Institution</option>
+        </select><br>
+        <label for="shotel">Hotel</label>
+        <select>
+            <option>1 star</option>
+            <option>2 star</option>
+            <option>3 star</option>
+            <option>4 star</option>
+            <option>5 star</option>
+        </select>
+        <p>and for this rent;</p>
+        <label for="price">Rent ranging</label>
+        <select>
+            <option>ksh1000-ksh5000</option>
+            <option>ksh5001-ksh10,000</option>
+            <option>ksh10,001-ksh15,000</option>
+            <option>ksh15,001-ksh20,000</option>
+            <option>ksh20,001-ksh25,000</option>
+            <option>ksh25,001-ksh30,000</option>
+            <option>ksh30,001-ksh35,000</option>
+            <option>ksh35,001-ksh40,000</option>
+            <option>ksh40,001-ksh45,000</option>
+            <option>ksh45,001-ksh50,000</option>
+            <option>ksh50,001-ksh55,000</option>
+        </select>
+        <p>Location being;</p>
+        <label for="place">County</label>
+        <select>
+            <option>Mombasa</option>
+            <option>Kwale</option>
+            <option>Kilifi</option>
+            <option>Tana River</option>
+            <option>Lamu</option>
+            <option>Taita-Taveta</option>
+            <option>Garisa</option>
+            <option>Wajir</option>
+            <option>Mandera</option>
+            <option>Marsabit</option>
+            <option>Kiambu</option>
+            <option>Nairobi</option>
+            <option>Machakos</option>
+            <option>Kajiado</option>
+        </select><br>
+        <input type="submit" name="submit" value="SUBMIT">
+     </form>
+    </div>
+    </div>
+    <div class="col-sm-4" id="col2">
+        <div>
+                <div id="gitau" class="carousel slide" data-ride="carousel"></div>
+        <!--data ride means that the moment you launch your web carousel should take effect/start-->
+        <!-- we are going to use ol to indicate which position an image occupies and if it slide its new position-->
+           <ol class="carousel-indicators">
+              <li data-target="#gitau"data-slide-to="0" class="active"></li>
+              <li data-target="#gitau"data-slide-to="1"></li>
+              <li data-target="#gitau"data-slide-to="2"></li>
+              <li data-target="#gitau"data-slide-to="3"></li>
+           </ol>
+         <div class="carousel-inner">
+            <div class="item-active"><img src="IMG/0.jpg" width="850px" height="350px"></div>
+            <div class="item"><img src="IMG/1.jpg" width="850px" height="350px"></div>
+            <div class="item"><img src="IMG/1.jpg" width="850px" height="350px"></div>
+            <div class="item"><img src="IMG/1.jpg" width="850px" height="350px"></div>
+         </div>
+         <!--we then add glyphicon which will be used to indicate direct to html icon -->
+         <a href="\gitau" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a><a href="\gitau" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only"></span>
+         </a>
+
+</div>
+         </div>
+    </div><br>
+    <div class="col-sm-4" id="col3">
+        <a href="#"><img src="IMG/fb2.jpg" width="50px" height="50px"></a>
+        <a href="#"><img src="IMG/instagram.jpg" width="50px" height="50px"></a>
+        <a href="#"><img src="IMG/twitter.jpg" width="50px" height="50px"></a>
+        <a href="#"><img src="IMG/whatsapp.jpg" width="50px" height="50px"></a>
+   
+    <div>
+        <h3>Featured</h3>
+        <div>
+            <img src="IMG/2.jpg" alt="Chania" width="250px" height="150px">
+            <div class="carousel-caption">
+            <p>Three bedroom bungalow in Rongai</p>
+            </div>
+        </div><br>
+                <div>
+            <img src="IMG/6.jpg" alt="Chania" width="250px" height="150px">
+            <div class="carousel-caption">
+            <p>Three bedroom bungalow in Rongai</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
